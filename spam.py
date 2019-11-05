@@ -14,10 +14,10 @@ with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
     smtp.login(emailAdd, emailPass)
 
     counter = 0
-    for i in range(10001):
+    for i in range(500):
         counter += 1
-        subject = f''
-        body = ''
+        subject = f'Get dunked on {counter}'
+        body = 'Get spammed punk'
         msg = f'Subject: {subject}\n\n{body}'
 
         smtp.sendmail(emailAdd, target, msg)

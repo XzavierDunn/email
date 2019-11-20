@@ -1,4 +1,4 @@
-#!/home/xd/email/venv/bin/python3
+#!/home/xd/workspace/personal/email/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

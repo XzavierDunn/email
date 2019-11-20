@@ -16,8 +16,14 @@ with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
     counter = 0
     for i in range(500):
         counter += 1
-        subject = f'Get dunked on {counter}'
-        body = 'Get spammed punk'
+        subject = f'Chore {counter}'
+        body = '''
+        I need you to handle a piece of work for me. Send me your cell # and
+        look forward to my text.
+
+        Thanks
+
+        Scott '''
         msg = f'Subject: {subject}\n\n{body}'
 
         smtp.sendmail(emailAdd, target, msg)
